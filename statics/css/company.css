@@ -1,0 +1,312 @@
+.pin {
+    width: 25px;
+    height: 27px;
+    background-image: url(../images/pin.png); 
+    background-position: right top;
+    position: absolute;
+    left: 0;
+    right: 4px;
+    margin: auto;
+    bottom: 30px;
+    transition: bottom 0.7s;
+}
+
+.pin.active {
+    background-position: left top;
+    bottom: 20px;
+}
+
+#about {
+        background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    background-position: center;
+    background-image: url(../images/about-bg.png);
+    /* background-size: auto 100%; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    height: 550px;
+}
+
+#about h2 {
+    margin-top: 80px;
+    font-size: 18px; 
+}
+
+#about h2:after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 3px;
+    margin: 13px auto;
+    background-color: #373737;
+}
+
+#about .wrapper h3 {
+        letter-spacing: 0.1px;
+    margin: 15px 0;
+    font-size: 35px;
+    line-height: 55px;
+    font-weight: 300;
+}
+
+#about .wrapper .desc p {
+    letter-spacing: -.2px;
+    margin: -15px 0;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 300;
+    background-color: rgba(255,255,255,.85);
+    padding: 15px;
+/*    position: relative;*/
+}
+
+#about .wrapper .desc {
+    /* background-image: url(../images/white-bg.png); */
+    /* padding: 10px; */
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -.2px;
+    /* margin-bottom: 10px; */
+    /* margin-top: 30px; */
+    /* max-width: 700px; */
+    text-align: center;
+/*    background-color: white;*/
+    margin-top: 50px;
+/*    position: absolute;*/
+}
+
+.wrapper .wrapper .desc p:first-child {
+    margin-bottom: 70px;
+}
+
+#partner {
+     background-color: white;
+    padding: 50px 0;
+    text-align: center;
+    color: #3b3b3b;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#partner h2 {
+        font-size: 40px;
+        margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+#partner .bottom-section {
+     padding-top: 0px;
+    padding-bottom: 50px;
+    margin-left: 45px;
+    margin-right: 45px;    
+}
+
+#partner .bottom-section h3 {
+       font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#partner .bottom-section p {
+       font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -.2px;
+}
+
+#locations {
+    background-color: #393e42;
+    background-image: url(../images/locations-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+#locations h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 70px; 
+}
+
+#locations .side {
+    width: 350px;
+    height: 480px;
+    background-image: url(../images/side-bg.png); 
+    float: left;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    color: white;
+    overflow: hidden;
+}
+
+#locations .side h3 {
+    font-weight: 300;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#locations .side h3:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px; 
+    background-color: white;
+    margin-top: 20px;
+}
+
+#locations .side .location {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#locations .side .location .info {
+    float: left;
+}
+
+#locations .side .list {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#locations .side .list li {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+#locations .side .list li:before {
+    content: '-';
+    margin-right: 7px;
+}
+
+#locations .side h3 strong {
+    font-weight: 700;
+}
+
+#locations .flags {
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+}
+
+#locations .flags li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#locations .flags li a {
+    display: block;
+    width: 45px;
+    height: 30px;
+    background-image: url(../images/flag-sprite.png);
+    text-indent: -9999px;
+}
+
+#locations .flags li:after {
+    color: #ddd;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    line-height: 30px;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#locations .flags li.left:after {
+    left: auto;
+    right: 60px;
+    text-align: right;
+}
+
+#locations .flags li:hover:after {
+    color: #fff;
+}
+
+#locations .flags li.ushq      { left: 60px; top: 170px;  } 
+#locations .flags li.mexico    { left: 65px; top: 250px;  }
+#locations .flags li.brazil    { left: 158px; top: 330px;  }
+#locations .flags li.uk        { left: 240px; top: 127px;  }
+#locations .flags li.france    { left: 305px; top: 158px;  }
+#locations .flags li.germany   { left: 344px; top: 124px;  }
+#locations .flags li.china     { left: 508px; top: 150px;  }
+#locations .flags li.china.second     { left: 558px; top: 120px;  }
+#locations .flags li.hongkong  { left: 583px; top: 211px;  }
+#locations .flags li.indonesia { left: 580px; top: 307px;  }
+#locations .flags li.australia { left: 625px; top: 358px;  }
+
+#locations .flags li.ushq:after      { content: 'U.S HQ';  }
+#locations .flags li.mexico:after    { content: 'Mexico';  }
+#locations .flags li.brazil:after    { content: 'Brazil';  }
+#locations .flags li.uk:after        { content: 'UK';  }
+#locations .flags li.france:after    { content: 'France';  }
+#locations .flags li.germany:after   { content: 'Germany';  }
+#locations .flags li.china:after     { content: 'China Factory';  }
+#locations .flags li.china.second:after     { content: 'China R&D Center';  }
+#locations .flags li.hongkong:after  { content: 'Hong Kong';  }
+#locations .flags li.indonesia:after { content: 'Indonesia';  }
+#locations .flags li.australia:after { content: 'Australia';  }
+
+#locations .flags li.ushq a      { background-position: 0 0; } 
+#locations .flags li.mexico a    { background-position: 0 -35px; }
+#locations .flags li.brazil a    { background-position: 0 -70px; }
+#locations .flags li.uk a        { background-position: 0 -101px; }
+#locations .flags li.france a    { background-position: 0 -134px; }
+#locations .flags li.germany a   { background-position: 0 -167px; }
+#locations .flags li.china a     { background-position: 0 -200px; }
+#locations .flags li.hongkong a  { background-position: 0 -233px; }
+#locations .flags li.indonesia a { background-position: 0 -266px; }
+#locations .flags li.australia a { background-position: 0 -299px; }
+
+
+#bye {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#bye h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+#bye .side-a,
+#bye .side-b {
+    width: 50%;
+    float: left;
+}
+
+#bye .side-a .inner {
+    padding: 50px;
+    text-align: right;
+}
+
+#bye .side-a .inner h3 {
+    font-size: 30px;
+    color: #1970ff;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+
+#bye .side-a .inner p {
+    line-height: 29px;
+    font-size: 18px;
+}
+
+#bye .clear {
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+}
