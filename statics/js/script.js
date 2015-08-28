@@ -1,6 +1,7 @@
 ( function($) {
     $('.cover-slider').bxSlider({
-        auto: true
+        auto: true,
+        pause: 8000
     });     
 
     $('.product-nav a').on('click', function(event) {
