@@ -82,8 +82,8 @@
 }
 
 #partner {
-     background-color: white;
-    padding: 50px 0;
+        background-color: white;
+    padding: 0px 0;
     text-align: center;
     color: #3b3b3b;
     margin-bottom: 50px;
@@ -93,12 +93,12 @@
     overflow: hidden;
     height: 600px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 #partner h2 {
-        font-size: 40px;
-        margin-top: 100px;
+         font-size: 40px;
+    margin-top: 80px;
     margin-bottom: 40px;
 }
 
