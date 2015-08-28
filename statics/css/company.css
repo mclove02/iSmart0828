@@ -271,8 +271,9 @@
 
 
 #bye {
-    padding: 100px 0;
+    padding: 90px 0;
     background-color: #fff;
+    height: 650px;
 }
 
 #bye h2 {
@@ -283,10 +284,11 @@
 }
 
 #bye .side-a,
-#bye .side-b {
+#bye .side-b{
     width: 50%;
     float: left;
 }
+
 
 #bye .side-a .inner {
     padding: 50px;
