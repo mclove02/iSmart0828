@@ -1,14 +1,14 @@
 .pin {
-    width: 25px;
-    height: 27px;
-    background-image: url(../images/pin.png); 
+        width: 25px;
+    height: 25px;
+    background-image: url(../images/pin.png);
     background-position: right top;
     position: absolute;
     left: 0;
     right: 4px;
     margin: auto;
-    bottom: 30px;
-    transition: bottom 0.7s;
+    bottom: 29px;
+    transition: bottom 1s;
 }
 
 .pin.active {
