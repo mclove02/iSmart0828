@@ -149,7 +149,7 @@
 
 #locations .side h3 {
     font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
     padding: 20px;
 }
 
@@ -170,6 +170,11 @@
 
 #locations .side .location .info {
     float: left;
+}
+
+
+#locations .side .location .info h3.hk {
+    line-height: 35px;
 }
 
 #locations .side .list {
@@ -291,7 +296,8 @@
 
 
 #bye .side-a .inner {
-    padding: 50px;
+    padding-right: 80px;
+    padding-top: 30px;
     text-align: right;
 }
 
@@ -312,3 +318,18 @@
     clear: both;
     margin-top: 50px;
 }
+
+#bye .leanin {
+        width: 204px;
+    height: 243px;
+    float: right;
+    position: absolute;
+    /* display: none; */
+    right: 470px;
+    /* top: 0; */
+    top: 2474px;
+}
+
+
+
+

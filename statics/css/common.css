@@ -45,6 +45,7 @@ q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -102,7 +103,6 @@ h1, h2, h3, h4, h5, h6, body, p, a {
 
 
 .wrapper {
-    /* 900??? width: 900px; */
     width: 960px; 
     margin: 0 auto;
 }
@@ -121,15 +121,53 @@ h1, h2, h3, h4, h5, h6, body, p, a {
     line-height: 35px;
     overflow: hidden;
     cursor: pointer;
+    background-color: #F7DC0A;
+/*    border-radius: 3px; */
+    color: black;
+    padding: 5px 160px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 0;
 }
 
-.button.arrow {
+/*
+.button .arrow {
     background-color: #F7DC0A;
+    border-radius: 3px; 
+    color: black;
+    padding: 5px 160px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 0;
+}
+*/
+
+.cover4 .wrapper .message .arrow {
+    padding: 5px 185.6px 5px 185.6px;
+}   
+
+/* ORIGINAL
+    background-color: #F7DC0A;
+    border-radius: 3px;
     color: black;
     padding: 0 0 0 25px;
-    font-size: 15px;
-    font-weight: 500;
-}
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+*/
+
+/*
+    background-color: #F7DC0A;
+     border-radius: 3px; 
+    color: black;
+    padding: 0px 130px 0 130px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 0;
+*/
 
 .shadow:after {
     content: '';
@@ -160,6 +198,7 @@ h1, h2, h3, h4, h5, h6, body, p, a {
 }
 
 
+/*
 .button.arrow:before {
     content: '>';
     float: right;
@@ -171,6 +210,7 @@ h1, h2, h3, h4, h5, h6, body, p, a {
     font-weight: 500;
     font-size: 1.5em;
 }
+*/
 
 .header {
     position: fixed;
@@ -178,7 +218,10 @@ h1, h2, h3, h4, h5, h6, body, p, a {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #252525;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 20px -4px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 20px -4px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 20px -4px rgba(0,0,0,0.25);
 }
 
 .header .nav {
@@ -210,15 +253,20 @@ h1, h2, h3, h4, h5, h6, body, p, a {
     line-height: 45px;
     padding: 0px 19px;
     padding-left: 15px;
-    color: #fff;
+    color: #000;
     font-size: 13px;
-    padding-top: 5px;\
+    padding-top: 5px;
+    font-weight: 400;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
 }
 
 
 .header .nav .gnb li a:hover {
 /*    font-weight: 700;*/
-/*    color:#008FFF;*/
+    color:#008FFF;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 #cover-section {
@@ -235,7 +283,7 @@ h1, h2, h3, h4, h5, h6, body, p, a {
 }
 
 .cover2 {
-       background-image: url(../images/cover2.png);
+    background-image: url(../images/cover2.png);
     height: 650px;
     background-position: center;
     background-repeat: no-repeat;
@@ -243,7 +291,7 @@ h1, h2, h3, h4, h5, h6, body, p, a {
     background-color: #fff;
 }
 
-.cover3 {
+.cover4 {
     background-image: url(../images/cover3.png);
     height: 650px;
     background-position: center;
@@ -252,12 +300,12 @@ h1, h2, h3, h4, h5, h6, body, p, a {
     background-color: #fff;
 }
 
-.cover .wrapper, .cover2 .wrapper, .cover3 .wrapper {
+.cover .wrapper, .cover4 .wrapper, .cover2 .wrapper {
     position: relative;
     height: 100%;
 }
 
-.cover .wrapper .message, .cover2 .wrapper .message, .cover3 .wrapper .message {
+.cover .wrapper .message, .cover4 .wrapper .message, .cover2 .wrapper .message {
     width: 450px;
     height: 379px;
     position: absolute;
@@ -266,53 +314,50 @@ h1, h2, h3, h4, h5, h6, body, p, a {
     left: 50;
     margin: auto;
     right: 0;
-    text-align: left;
+/*    text-align: left;*/
 }
 
 .cover .wrapper .message h2, .cover2 .wrapper .message h2 {
-    font-size: 36px;
+    font-size: 33px;
     line-height: 50px;
     /* margin-bottom: 10px; */
     font-weight: 700;
     letter-spacing: -1px;
     background-color: rgba(255,255,255,.85);
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 15px 35px;
+    text-align: center;
 }
 
-.cover3 .wrapper .message h2 {
-/*
-    font-size: 25px;
-    line-height: 38px;    
-*/
-    font-size: 30px;
-    line-height: 40px;
-    /* margin-bottom: 10px; */
+.cover4 .wrapper .message h2 {
+    font-size: 29px;
+    line-height: 44px;
+/*     margin-bottom: 10px; */
     font-weight: 700;
     letter-spacing: -1px;
-    background-color: rgba(255,255,255,.8);
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: rgba(255,255,255,.85);
+    padding: 15px 30px;
+    text-align: center;
 }
 
 
 .cover .wrapper .message h2 .sub, .cover2 .wrapper .message h2 .sub {
-   font-size: 0.55em;
+   font-size: 0.5em;
     display: block;
-    font-weight: 300;
-    letter-spacing: 0.1px;
-}
-.cover3 .wrapper .message h2 .sub {
-font-size: 0.7em;
-    display: block;
-    font-weight: 300;
+    color: #555;
+    font-weight: 400;
     letter-spacing: 0.1px;
 }
 
+.cover4 .wrapper .message h2 .sub {
+    font-size: 0.55em;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.05px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 10px auto;
+    color: #555;
+}
 
 /* Sections */
 #learn {
@@ -346,7 +391,7 @@ font-size: 0.7em;
 
 #learn .message p {
     color: black;
-        line-height: 28PX;
+    line-height: 28PX;
     font-size: 18PX;
     margin: 30px 0;
 }
@@ -393,6 +438,7 @@ font-size: 0.7em;
     position: absolute;
     left: 0;
     bottom: -3px;
+    transition-timing-function: ease-in-out;
 }
 
 #products .product-nav li {
@@ -437,6 +483,16 @@ font-size: 0.7em;
 #products .product-contents .item-inner {
     overflow: hidden;
     padding: 15px 0 5px 15px;
+}
+
+#products .product-contents .item-inner .button {
+    background-color: #F7DC0A;
+    border-radius: 3px;
+    color: black;
+    padding: 0 25px 0 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 #products .product-contents .item-inner h3 {
@@ -566,6 +622,7 @@ font-size: 0.7em;
     letter-spacing: 1px;
     text-align: center;
     margin-top: 50px;
+    padding-top: 80px;
 }
 
 #solution .main {
@@ -582,6 +639,7 @@ font-size: 0.7em;
     width: 50%;
     float: left;
     position: relative;
+    padding-bottom: 50px;
 }
 
 #solution .numbers .number .inner {

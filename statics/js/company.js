@@ -4,7 +4,7 @@
     var width = $('.info').width();
     var tw = total * width;
     $('.location').css('width', tw);
-    $('.flag').on('click', function(event) {
+    $('.flag.select').on('click', function(event) {
         event.preventDefault();
 
         var index = $(this).index();
@@ -19,7 +19,7 @@
 
     }); 
 
-    $('.flag').eq(0).trigger('click');
+    $('.flag.select').eq(0).trigger('click');
 
 
 })(jQuery);
